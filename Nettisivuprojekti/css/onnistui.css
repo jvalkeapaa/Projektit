@@ -1,0 +1,70 @@
+    body {
+        margin-right: 40%;
+        margin-left: 40%;
+        margin-top: 5%;
+        color: #ffffff;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right bottom;
+        background-color: #000000;
+
+
+    }
+    div.transbox {
+      padding: 2.5%;
+      background-color: #000000;
+    }
+
+    div.background {
+      border: solid red 1px;
+      padding: 2px;
+      opacity: 0.9;
+    }
+
+    div.transbox p {
+      margin: 2%;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    h1 {
+        color: red;
+        font-family: "Papyrus", "Fantasy";
+        float: middle;
+        padding: 20px;
+        }
+
+    h2 {
+    color: red;
+        text-shadow: 3px 3px #3C3C3C;
+        float: middle;
+        padding: 15px;
+    }
+
+    li {
+    color: red;
+    padding: 2px;
+    font-size: large;
+    font-family: "Papyrus", "Fantasy";
+
+    }
+
+    img {
+
+        border-radius: 25px;
+        float: middle;
+        padding: 15px;
+        height: 400px;
+        width: 300px;
+        z-index: 9999;
+    }
+
+
+    a {
+    color: red;
+    }
+
+    hr {
+
+
+

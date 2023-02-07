@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Arkham Horror restaurants </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="img/resepti.jpg" alt="resepti">
+    </div>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Arkham Horror restaurants
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index_en.html">Main <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu_en.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about_en.html">Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="insert_lomake_en.html">Book table</a>
+              </li>
+            </ul>
+            <div class="user_option">
+                <button class="open-button" onclick="openForm()"><i class="fa fa-user" aria-hidden="true"></i></button>
+                  <div class="form-popup" id="myForm">
+                    <form action="kirjautuminen.php" class="form-container">
+                      <h1>Login</h1><br>
+
+                      <p> Don't have account? Create it<a href="account_en.html">here!</a></p>
+
+                      <label for="email"><b>Username</b></label>
+                      <input type="text" placeholder="Give username" id="email" name="email" required>
+
+                      <label for="password"><b>Password</b></label>
+                      <input type="password" placeholder="Give password" id="password" name="password" required><br>
+
+                      <p>Forgot<a href="">password?</a></p>
+
+                      <button type="submit" class="btn">Login</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                  </div>
+
+
+
+              <form class="form-inline">
+                <a href="index.html">
+                  <img src="img/fi_flag.png" alt="suomilippu" width="20%" height="20%">
+                </a>
+              </form>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Horror and terrifying feasts
+                    </h1>
+                    <p>
+                      Welcome to Arkham Horror-restaurants main page. Have you always wanted to get to taste the flavours of legendary H.P. Lovecraft?Book a table and come to find out!
+                    </p>
+                    <div class="btn-box">
+                      <a href="about.html" class="btn1">
+                        Our restaurant
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Thirst for information?
+                    </h1>
+                    <p>
+                      Are you returning customer and want to find out what our food contains to invite others to visit? Book a table and give us your information and we will feed you just as you always wanted! But make haste, tables are very limited!
+                    </p>
+                    <div class="btn-box">
+                      <a href="insert_lomake.html" class="btn1">
+                        Book your table
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Something special?
+                    </h1>
+                    <p>
+                      Do you, your kindred, friend or your special one having special day to celebrate? We will help you gladly!Find out what we have to offer for specialities, wear your favourite robe and party on!
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Special events
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <ol class="carousel-indicators">
+            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#customCarousel1" data-slide-to="1"></li>
+            <li data-target="#customCarousel1" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- offer section -->
+
+  <section class="offer_section layout_padding-bottom">
+    <div class="offer_container">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6  ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="img/cthulhu.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Feasts in the name of Cthulhu
+                </h5>
+                <h6>
+                  <span>Free tables!</span>
+                </h6>
+                <a href="insert_lomake.html">
+                  Order yours <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6  ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="img/kultisti.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Join the cult
+                </h5>
+                <h6>
+                  <span>-5% off your orders!</span>
+                </h6>
+                <a href="">
+                  Create account <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end offer section -->
+
+  <!-- food section -->
+
+  <section class="food_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Menu and pricing
+        </h2>
+      </div>
+
+      <ul class="filters_menu">
+        <li class="active" data-filter="*">All</li>
+        <li data-filter=".burger">Meat</li>
+        <li data-filter=".pizza">Fish</li>
+        <li data-filter=".pasta">Pasta</li>
+        <li data-filter=".fries">Chicken</li>
+      </ul>
+
+      <div class="filters-content">
+        <div class="row grid">
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/uppopaisto.jpg" alt="Deep one">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Deep-fried Deep One
+                  </h5>
+                  <p>
+                    Dark creature caught from deep and deep-fried just for you!
+                  </p>
+                  <div class="options">
+                    <h6>
+                      20€
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/uhrilammas.jpg" alt="uhrilammas">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Sacrificial Lamb
+                  </h5>
+                  <p>
+                    Sacrificial lamb sacrificed and cooked to your plate fully by the ritual, come and feast!
+                  </p>
+                  <div class="options">
+                    <h6>
+                      21€
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/chowder.jpg" alt="Chowder">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    New England Damned Chowder
+                  </h5>
+                  <p>
+                    Tentacles and bacon? What could go wrong! Favourite among customers
+                  </p>
+                  <div class="options">
+                    <h6>
+                      19€
+                    </h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/spawn.jpg" alt="Spawnghetti">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Formless Spawnghetti
+                  </h5>
+                  <p>
+                    So tentacly! So formless! So tasty...
+                    Pasta served with our secret sauce
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $18
+                    </h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all fries">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/pingviini.jpg" alt="Albino Pingviini">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Albino Penguin Au Vin Blanc
+                  </h5>
+                  <p>
+                    White penguin served in white vine. Penguin separated from its horde because it was so special
+                  </p>
+                  <div class="options">
+                    <h6>
+                      23€
+                    </h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/sammakko.jpg" alt="Sammakko">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Tsathogguambalaja
+                  </h5>
+                  <p>
+                    Fish stew served in... Giant toad?!
+                  </p>
+                  <div class="options">
+                    <h6>
+                      20€
+                    </h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/dagon.jpg" alt="Isä Dagon">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Ahiä! Ahiä! Father Dagon
+
+                  </h5>
+                  <p>
+                    Meaty sacrifice to full-fill even the father Dagon! Our sacrifice is served with rice
+                  </p>
+                  <div class="options">
+                    <h6>
+                      24€
+                    </h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/leipa.jpg" alt="Sandwitch Horror">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    To call forth the Sandwich Horror
+                  </h5>
+                  <p>
+                    Horror of the other sandwiches and of small stomach! Made for two brave souls
+                  </p>
+                  <div class="options">
+                    <h6>
+                      39€
+                    </h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/maccheese.jpg" alt="mac n- cheese">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Lovecraft Mac n' Cheese
+                  </h5>
+                  <p>
+                    Cheesy and bacon-full macaroni American- ja Arkham style. Choose your cheese from many variables!
+                  </p>
+                  <div class="options">
+                    <h6>
+                      17€
+                    </h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="insert_lomake.html">
+          Book the table!
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end food section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="img/deepone.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Who and why are we?
+              </h2>
+            </div>
+            <p>
+              We are a new restaurant chain in Finland created from the world of H.P. Lovecraft. Our goal is to create mythological food which tastes divine
+              even when the food might seem suspicious to unknown eye. It's still just the theme of our restaurant! We'll guarantee you that when you dare to enter
+              our restaurant, our service, atmosphere and food will wake the discussion and hopefully make you thirst for our food again and again!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center psudo_white_primary mb_45">
+        <h2><br><br>
+          Customer reviews!
+        </h2>
+      </div>
+      <div class="carousel-wrap row ">
+        <div class="owl-carousel client_owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                    Delicious food and fantastic atmosphere!Almost like I did create the universe myself!
+                </p>
+                <h6>
+                  H.P Lovecraft
+                </h6>
+                <p>
+                  Author
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="img/arvostelija1.jpg" alt="H.P Lovecraft" class="box-img">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                  Really delicious! I'll be back as soon as I finish my next Arkham adventure!
+                </p>
+                <h6>
+                  Ash-can Pete
+                </h6>
+                <p>
+                  Investigator
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="img/arvostelija2.jpg" alt="Ashcan Pete" class="box-img">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                  ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn
+                </p>
+                <h6>
+                  unknown
+                </h6>
+                <p>
+                  ?
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="img/arvostelija3.jpg" alt="deep one" class="box-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Contact the owner!
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://www.google.com/maps/place/Pääskyvuorentie+9,+79700+Heinävesi/@62.4334991,28.5695344,17z/data=!3m1!4b1!4m5!3m4!1s0x469b11500b92938d:0x23dbc7cbff0ce042!8m2!3d62.4334991!4d28.5717231" target="_blank">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Pääskyvuorentie 9
+                </span>
+              </a>
+              <a href="tel:+01 1234567890" target="blank">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  +01 1234567890
+                </span>
+              </a>
+              <a href="mailto:arkham@horror.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  arkham@horror.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              Arkham restaurants
+            </a>
+            <p>
+              Food always made with quality and love just for you!
+            </p><br>
+            <div class="footer_social">
+              <a href="https://www.facebook.com/profile.php?id=100050921601980">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://twitter.com/arkhamchronicle?lang=fi">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.instagram.com/arkhamreporter/?hl=fi">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.pinterest.com/search/pins/?q=necronomnomnom&rs=typed">
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>
+            Opening hours
+          </h4><br>
+          <h5>
+            Every day
+          </h5>
+          <p>
+            10 pm - 08 am
+          </p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> Joonas Valkeapää
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+
+
+</body>
+
+</html>

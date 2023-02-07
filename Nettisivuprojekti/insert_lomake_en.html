@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fi">
+<head>
+	 <meta charset="utf-8">
+	 <title>Keittiötiedot_en</title>
+	 <link rel="stylesheet" href="css/mystyle.css">
+ 
+</head>
+<body>
+
+
+
+		<div class="transbox">
+
+			<h1 class="otsikko">Restaurant Arkham Horror</h1>
+			<img src="img/syvyys.png" alt="Restaurant from deep"><br><br><br><br><br>
+
+		</div>
+
+		<div class="transbox">
+		<form method="post" action="insert.php">
+		
+		<label for="pvm">Day of reservation:</label>
+		<br><input class="kalenteri" type="date" name="pvm" id="pvm">
+		
+		<br><br>
+		
+		<label for="nimi">Name:</label>
+		<br><input type="text" name="nimi" id="nimi">
+		<br><br>
+	
+		<label for="pvm">Email:</label>
+		<br><input type="text" name="email" id="email">
+		
+		<br><br>
+
+		<label for="ruokalista">Choose your meal to be made:</label><br>
+		<select id="ruokalista" name="ruokalista">
+			<option value="Uhrilammas">Sacrifial Lamb</option>
+			<option value="Uppopaistettu">Deeb-fried Deep One</option>
+			<option value="Muodoton">Formless Spawnghetti</option>
+			<option value="Pingviini">Albino Penguin Au Vin Blanc</option>
+			<option value="Makaroni">Lovecraft Mac 'n Cheese</option>
+		</select>
+
+		<br><br>
+
+		<label>Special diet:</label>
+
+		<br>
+		<br>
+
+			<label for="maidoton" class="script">Non-dairy
+		<input type="checkbox" name="erikoiset[]" value="Maidoton" id="maidoton">
+				<span class="geekmark"></span>
+		</label><br>
+			<label for="gluteiiniton" class="script">Gluten free
+		<input type="checkbox" name="erikoiset[]" value="Gluteiiniton" id="gluteiiniton">
+				<span class="geekmark"></span>
+		</label><br>
+			<label for="laktoositon" class="script">Lactose free
+		<input type="checkbox" name="erikoiset[]" value="Laktoositon" id="laktoositon">
+				<span class="geekmark"></span>
+		</label><br>
+			<label for="vegaaninen" class="script">Vegan
+		<input type="checkbox" name="erikoiset[]" value="Vegaaninen" id="vegaaninen">
+				<span class="geekmark"></span>
+		</label><br>
+			<label for="muu" class="script">Something else?
+		<input type="checkbox" name="erikoiset[]" value="Muu" id="muu">
+				<span class="geekmark"></span>
+		</label>
+		<input type="text" name="muut" id="muut">
+
+		<br><br>
+		
+		<label for="viesti">Other regards and wishes to our kitchen:</label>
+		<br>
+		<textarea name="viesti" id="viesti" rows="4" cols="45"></textarea>
+		<br><br>
+		
+		<input type="submit" name="submit" value="Send">
+
+			<input type="button" value="Return to last page" onclick="history.back()">
+		</form>
+		</div>
+
+		<div class="mapouter">
+			<div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=P%C3%A4%C3%A4skyvuorentie%209&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2piratebay.org"></a><br>
+				<style>.mapouter{position:absolute;top:51%;left:66%;text-align:right;height:400px;width:500px;}</style>
+				<a href="https://www.embedgooglemap.net">using google maps on website</a>
+				<style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+			</div>
+		</div>
+		
+
+
+</body>
+</html>

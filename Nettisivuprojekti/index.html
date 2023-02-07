@@ -1,0 +1,700 @@
+<!--
+ Sivustoni pääsivu. Sisältää jotain jokaisesta sivusta mitä sivullani on luotu. Jokainen sivuni löytyy myös englannin
+ kielisenä, mutta niissä ei ole tätä pienintäkään kommentointia.
+
+ Sivusto on luotu bootstrap-tiedostosta nimeltä Feane.
+
+ Admin-sivulleni pääsee kirjoittamalla yläriville perään vain admin.
+
+ Käyttäjänimi adminille on 'arkhamadmin' ja salasana on 'Admin123'.
+
+ !! Kirjautumisosuus ei ole toiminnassa tällä hetkellä !!
+ -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Arkham Horror ravintolat </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="img/resepti.jpg" alt="resepti">
+    </div>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Arkham Horror ravintolat
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Pääsivu <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Tietoa meistä</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="insert_lomake.html">Varaa pöytä</a>
+              </li>
+            </ul>
+            <div class="user_option">
+                <button class="open-button" onclick="openForm()"><i class="fa fa-user" aria-hidden="true"></i></button>
+                  <div class="form-popup" id="myForm">
+                    <form action="kirjautuminen.php" class="form-container">
+                      <h1>Kirjautuminen</h1><br>
+
+                      <p> Eikö sinulla ole käyttäjää? Luo se<a href="account.php">täältä!</a></p>
+
+                      <label for="email"><b>Käyttäjätunnus</b></label>
+                      <input type="text" placeholder="Anna käyttäjätunnus" id="email" name="email" required>
+
+                      <label for="password"><b>Salasana</b></label>
+                      <input type="password" placeholder="Anna salasana" id="password" name="password" required><br>
+
+                      <p>Unohditko<a href="">salasanasi?</a></p>
+
+                      <button type="submit" class="btn">Kirjaudu</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Sulje</button>
+                    </form>
+                  </div>
+
+
+
+              <form class="form-inline">
+                <a href="index_en.html">
+                  <img src="img/us_flag.png" alt="usalippu" width="14%" height="14%">
+                </a>
+              </form>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Kauhua ja hirvittäviä herkkuja
+                    </h1>
+                    <p>
+                      Tervetuloa Arkham Horror-ravintoloiden sivuille. Oletko aina halunnut päästä maistamaan miltä legendaarisen H.P Lovecraftin luomat annokset maistuisivat? Varaa pöytäsi ja tule ottamaan selvää!
+                    </p>
+                    <div class="btn-box">
+                      <a href="about.html" class="btn1">
+                        Ravintolamme
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Tietoa tiedonjanoosi
+                    </h1>
+                    <p>
+                      Oletko palaava asiakas ja haluat tietää mitä ruokamme sisältävät kutsuaksesi tuttuja tutustumaan? Varaa pöytä ja anna lisätietoja niin teemme teille ruuan juuri niin kuin haluatte! Mutta ole nopea, pöydät menevät hyvin nopeasti!
+                    </p>
+                    <div class="btn-box">
+                      <a href="insert_lomake.html" class="btn1">
+                        Varaa pöytäsi!
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Erikoistilaisuus?
+                    </h1>
+                    <p>
+                      Onko sinulla, perheelläsi, ystävälläsi tai kumppanillasi tulossa merkkipäivä jota haluat juhlistaa? Me autamme mielellämme! Ota selvää tarjoamistamme erikoispalveluista ja ei muuta kuin kaavut päälle ja juhlimaan!
+                    </p>
+                    <div class="btn-box">
+                      <a href="insert_lomake.html" class="btn1">
+                        Erikoispalvelut
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <ol class="carousel-indicators">
+            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#customCarousel1" data-slide-to="1"></li>
+            <li data-target="#customCarousel1" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- offer section -->
+
+  <section class="offer_section layout_padding-bottom">
+    <div class="offer_container">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6  ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="img/cthulhu.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Herkkuja Cthulhun nimissä
+                </h5>
+                <h6>
+                  <span>Pöytiä vapaana!</span>
+                </h6>
+                <a href="insert_lomake.html">
+                  Varaa omasi <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6  ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="img/kultisti.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Liity kulttiin
+                </h5>
+                <h6>
+                  <span>-5% tilauksista!</span>
+                </h6>
+                <a href="account.php">
+                  Luo käyttäjä <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end offer section -->
+
+  <!-- food section -->
+
+  <section class="food_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Menu ja hinnoittelu
+        </h2>
+      </div>
+
+      <ul class="filters_menu">
+        <li class="active" data-filter="*">Kaikki</li>
+        <li data-filter=".burger">Liha</li>
+        <li data-filter=".pizza">Kala</li>
+        <li data-filter=".pasta">Pasta</li>
+        <li data-filter=".fries">Kana</li>
+      </ul>
+
+      <div class="filters-content">
+        <div class="row grid">
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/uppopaisto.jpg" alt="Deep one">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Deep-fried Deep One
+                  </h5>
+                  <p>
+                    Merien syvää ja synkkää otusta kalastettuna ja uppopaistettuna vain sinua varten!
+                  </p>
+                  <div class="options">
+                    <h6>
+                      20€
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/uhrilammas.jpg" alt="uhrilammas">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Sacrifial Lamb
+                  </h5>
+                  <p>
+                    Uhrilammas uhrattuna ja valmistettuna lautasellesi täysin rituaalin mukaisesti, tule ja koe!
+                  </p>
+                  <div class="options">
+                    <h6>
+                      21€
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/chowder.jpg" alt="Chowder">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    New England Damned Chowder
+                  </h5>
+                  <p>
+                    Lonkeroita ja pekonia? Mikä voisi mennä pieleen! Asiakkaiden suosikki
+                  </p>
+                  <div class="options">
+                    <h6>
+                      19€
+                    </h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/spawn.jpg" alt="Spawnghetti">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Formless Spawnghetti
+                  </h5>
+                  <p>
+                    Niin lonkeromaista! Niin muodotonta! Niin maukasta...
+                    Pasta tarjoillaan salaisella kastikkeellamme
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $18
+                    </h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all fries">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/pingviini.jpg" alt="Albino Pingviini">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Albino Penguin Au Vin Blanc
+                  </h5>
+                  <p>
+                    Valkoviinissä tarjoiltua pingviiniä joka erottui laumasta edukseen
+                  </p>
+                  <div class="options">
+                    <h6>
+                      23€
+                    </h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/sammakko.jpg" alt="Sammakko">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Tsathogguambalaja
+                  </h5>
+                  <p>
+                    Kalamuhennosta tarjoiltuna... Jättimäisestä sammakosta?!
+                  </p>
+                  <div class="options">
+                    <h6>
+                      20€
+                    </h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/dagon.jpg" alt="Isä Dagon">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Ahiä! Ahiä! Father Dagon
+
+                  </h5>
+                  <p>
+                    Lihaisa uhraus joka kelpaisi jopa itse isä Dagonille! Uhrilahjamme tarjoillaan riisin kanssa
+                  </p>
+                  <div class="options">
+                    <h6>
+                      24€
+                    </h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/leipa.jpg" alt="Sandwitch Horror">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    To call forth the Sandwitch Horror
+                  </h5>
+                  <p>
+                    Lämpimien leipien ja pienivatsaisten kauhu! Valmistetaan kahdelle rohkealle
+                  </p>
+                  <div class="options">
+                    <h6>
+                      39€
+                    </h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/maccheese.jpg" alt="mac n- cheese">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Lovecraft Mac n' Cheese
+                  </h5>
+                  <p>
+                    Juustoista ja pekonista makaronia Amerikan ja Arkhamin tyyliin. Voit itse valita juuston monista vaihtoehdoista!
+                  </p>
+                  <div class="options">
+                    <h6>
+                      17€
+                    </h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="insert_lomake.html">
+          Varaa pöytäsi HETI!
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end food section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="img/deepone.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Mikä olemme ja miksi?
+              </h2>
+            </div>
+            <p>
+              Olemme uusi ravintolaketju Suomessa joka on luotu H.P Lovecraftin tyyliin. Tyylimme on luoda mytologista ruokaa joka maistuu taivaalliselta vaikka
+              saattaa näyttää tietämättömän silmiin hyvinkin epäilyttävältä. Se on kuitenkin vain ravintolamme teema! Takaamme sinulle että uskaltautuessasi ravintolaamme
+              palvelumme, tunnelmamme ja ruokamme tulevat herättämään keskustelua ja toivottavasti janoamaan herkkujamme uudestaan ja uudestaan!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center psudo_white_primary mb_45">
+        <h2><br><br>
+          Asiakkaidemme arvosteluja!
+        </h2>
+      </div>
+      <div class="carousel-wrap row ">
+        <div class="owl-carousel client_owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                    Herkullista ruokaa ja mahtava tunnelma! Aivan kuin olisin itse suunnitellut ja luonut kaiken!
+                </p>
+                <h6>
+                  H.P Lovecraft
+                </h6>
+                <p>
+                  Kirjailija
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="img/arvostelija1.jpg" alt="H.P Lovecraft" class="box-img">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                  Todella herkullista! Tulen kyllä uudestaan heti kun selviydyn seuraavalta seikkailultani Arkhamissa!
+                </p>
+                <h6>
+                  Tuhkakuppi Pete
+                </h6>
+                <p>
+                  Tutkija
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="img/arvostelija2.jpg" alt="Ashcan Pete" class="box-img">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                  ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn
+                </p>
+                <h6>
+                  tuntematon
+                </h6>
+                <p>
+                  ?
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="img/arvostelija3.jpg" alt="deep one" class="box-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Ota yhteyttä omistajaan!
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://www.google.com/maps/place/Pääskyvuorentie+9,+79700+Heinävesi/@62.4334991,28.5695344,17z/data=!3m1!4b1!4m5!3m4!1s0x469b11500b92938d:0x23dbc7cbff0ce042!8m2!3d62.4334991!4d28.5717231" target="_blank">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Pääskyvuorentie 9
+                </span>
+              </a>
+              <a href="tel:+01 1234567890" target="blank">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  +01 1234567890
+                </span>
+              </a>
+              <a href="mailto:arkham@horror.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  arkham@horror.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              Arkhamin ravintolat
+            </a>
+            <p>
+              Aina laadulla ja rakkaudella luotua ruokaa juuri sinulle!
+            </p><br>
+            <div class="footer_social">
+              <a href="https://www.facebook.com/profile.php?id=100050921601980">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://twitter.com/arkhamchronicle?lang=fi">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.instagram.com/arkhamreporter/?hl=fi">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.pinterest.com/search/pins/?q=necronomnomnom&rs=typed">
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>
+            Aukiolo ajat
+          </h4><br>
+          <h5>
+            Joka päivä
+          </h5>
+          <p>
+            klo 22.00 - 08.00
+          </p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> Joonas Valkeapää
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- form opening and closing -->
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+
+</body>
+
+</html>
